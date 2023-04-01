@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+
+body{
+    background: #141e28;
+    font-family: 'Silkscreen', cursive;
+}
+
+
+/* Mcro ondas todo */
+.micro-ondas{
+    height: 372px;
+    width: 718px;
+}
+
+/* Porta do micro ondas */
+.cPorta{
+    border: 5px solid #828282;
+    background: #e3e3e3;
+    height: 372px;
+    width: 550px;
+}
+
+#iFechado{
+    position: absolute;
+    right: auto;
+    margin: 0px;
+    height: 250px;
+    width: 440px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 20px solid #000000;
+    border-radius: 0px 1cm 1cm 0px;
+}
+
+@keyframes abrir{
+    0% {
+        right: 0px;
+	}
+	100% {
+        right: 400px;
+        border-radius: 1cm 0px 0px 1cm;
+	}   
+}
+
+@keyframes fechar{
+    0% {
+        right: 400px;
+        border-radius: 1cm 0px 0px 1cm;
+    }
+    100% {
+        right: -20px;
+        border-radius: 0px 1cm 1cm 0px;
+    }
+}
+
+.cAberto{
+    position: absolute;
+    margin: 0px;
+    height: 230px;
+    width: 410px;
+    background: linear-gradient(0deg, #af8600 0%, #ffff00 100%);
+    border: 6px solid #000000;
+}
+
+/* Botoes do micro ondas */
+.botoes{
+    border: 5px solid #828282;
+    background: #e3e3e3;
+    height: 372px;
+    width: 200px;
+}
+
+table#iTeclas{
+    /* border: 4px solid #828282; */
+    font-size: 30px;
+}
+
+table#iTeclas tr td{
+    background: #001a00d2;
+    border: 3px solid #000000;
+    color: #007527;
+    text-align: center;
+    height: 10px;
+    width: 40px;
+    transition: background 0.2s ease, color 0.2s ease, border 0.2s ease;
+    cursor: pointer;
+}
+table#iTeclas tr td:hover{
+    color: #00be3f;
+    background: #001a00;
+    border: 3px solid #082000;
+}
+
+/* Timer*/
+#iTimer{
+    height: 45px;
+    width: 130px;
+    margin: 0px;
+    border: 0px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    border: none;
+}

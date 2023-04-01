@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Micro-Ondas</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="script.js"></script>
+    </head>
+    
+    <body>
+        <div class="d-flex align-items-center justify-content-center" style="height: 100vh; width: 100vw">
+                <!-- <img src="micro-wave.png" alt="Micro Ondas" height="600" class="mx-auto d-block"> -->
+            <div class="micro-ondas mx-auto d-flex">
+                
+                <div class="cPorta d-flex align-items-center justify-content-center" id="iPorta">
+                    <div class="cAberto d-flex align-items-center justify-content-center">
+                        <div class="cFechado"  id="iFechado" onclick="abrir(); fechar();"></div>
+                    </div>
+                </div>
+                
+                <div class="botoes d-flex align-items-center justify-content-center">
+                    <table class="cTeclas" id="iTeclas">
+                        <tr>
+                            <td  onclick="number_time('1'); sound('2', true)" ><buttom>1</buttom></td>
+                            <td  onclick="number_time('2'); sound('2', true)" ><buttom>2</buttom></td>
+                            <td  onclick="number_time('3'); sound('2', true)" ><buttom>3</buttom></td>
+                        </tr>
+                        <tr>
+                            <td  onclick="number_time('4'); sound('2', true)" ><buttom>4</buttom></td>
+                            <td  onclick="number_time('5'); sound('2', true)" ><buttom>5</buttom></td>
+                            <td  onclick="number_time('6'); sound('2', true)" ><buttom>6</buttom></td>
+                        </tr>
+                        <tr>
+                            <td  onclick="number_time('7'); sound('2', true)" ><buttom>7</buttom></td>
+                            <td  onclick="number_time('8'); sound('2', true)" ><buttom>8</buttom></td>
+                            <td  onclick="number_time('9'); sound('2', true)" ><buttom>9</buttom></td>
+                        </tr>
+                        <tr>
+                            <td onclick="cancel(); sound('2', true)"><buttom style="font-size: 7px; margin: 0px;">cancel</buttom></td>
+                            <td  onclick="number_time('0'); sound('2', true)" ><buttom>0</buttom></td>
+                            <td onclick="iniciar(); sound('2', true)"><buttom style="font-size: 10px; margin: 0px;">+30s</buttom></td>
+                        </tr>
+                        <tr>
+                            <td colspan="9"><input type="text" readonly placeholder=":" value=" " id="iTimer" style="cursor: default"/></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <input type="text" placeholder=":" id="iCont" style="cursor: default; display: none"/>
+      </body>
+</html>

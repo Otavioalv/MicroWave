@@ -298,7 +298,7 @@ function increment(val){
     return str;
 }
 
-sounds = ["abrir.mp3", "fechar.mp3", "teclado.mp3", "esquentar.mp3", "final.mp3"];
+/*sounds = ["abrir.mp3", "fechar.mp3", "teclado.mp3", "esquentar.mp3", "final.mp3"];
 function sound(val, ver){
     var audio = new Audio();
 
@@ -311,4 +311,4 @@ function sound(val, ver){
         audio.stop();
         console.log("pausa");
     }
-};
+};*/
